@@ -100,7 +100,7 @@ export function MenuGrid() {
           Our menu
         </h2>
 
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-2">
           {menuItems.map((item, index) => (
             <div
               key={item.nameEnglish}

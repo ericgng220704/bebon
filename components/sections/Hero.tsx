@@ -1,10 +1,6 @@
 "use client";
 
 import Container from "@/components/Container";
-import PrimaryCTA from "@/components/PrimaryCTA";
-import { Button } from "@/components/ui/button";
-import { site } from "@/content/site";
-import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -48,29 +44,26 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <Image
           ref={leftCookieRef}
-          src="/icon/cookie_icon.png"
+          src="/hero/product.png"
           alt="Cookie decoration"
-          width={420}
-          height={420}
-          className="absolute -left-30 top-1/2-translate-y-1/2
-            opacity-45
+          width={320}
+          height={320}
+          className="absolute -left-25 top-1/2-translate-y-1/2
             max-w-none
             -rotate-12
-            blur-[0.2px]
           "
           priority
         />
 
         <Image
           ref={rightCookieRef}
-          src="/icon/cookie_icon.png"
+          src="/hero/product.png"
           alt="Cookie decoration"
-          width={420}
-          height={420}
+          width={320}
+          height={320}
           className="
             absolute right-[-140px] top-1/2
             -translate-y-1/2
-            opacity-45
             max-w-none
             rotate-[12deg]
             blur-[0.2px]
